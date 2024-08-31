@@ -1,0 +1,14 @@
+// To Start the Mongo DB in the Terminal
+C:\Users\Lenovo>mongosh
+
+// To see all the Database present in the Mongo DB
+test> show dbs
+Chitkara  120.00 KiB
+admin      40.00 KiB
+config     96.00 KiB
+local      72.00 KiB
+
+// To use the Database
+test> use Chitkara
+switched to db Chitkara
+
