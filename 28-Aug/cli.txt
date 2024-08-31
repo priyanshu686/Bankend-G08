@@ -47,7 +47,7 @@ Chitkara> db.User.insertMany([
 }
 
 
-// To Find the data present in the collection
+// To Display the data present in the collection
 Chitkara> db.User.find({})
 // Output
 [
