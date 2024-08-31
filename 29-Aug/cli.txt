@@ -17,6 +17,8 @@ Chitkara> db.User.find( { city: 'Chicago', age: { $lt: 30 } } )
   }
 ]
 
+
+
 // To find the data using or in the find Command
 // or Means one of the condition given should be true
 Chitkara> db.User.find({ 
