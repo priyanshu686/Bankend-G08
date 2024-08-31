@@ -19,19 +19,43 @@ Chitkara> db.User.find( { city: 'Chicago', age: { $lt: 30 } } )
 
 // To find the data using or in the find Command
 // or Means one of the condition given should be true
- db.User.find({
-...     $or: [
-...         { city: 'San Francisco' },
-...         { age: { $gt: 35 } }
-...     ]
-... })
-// Output
+Chitkara> db.User.find({ 
+                $or: [ 
+                    { city: 'Chicago' }, 
+                    { age: { $gt: 35 } 
+                    }                        ] 
+                })
+//Output
 [
   {
-    _id: ObjectId('66d351b260b523f3622710c1'),
-    name: 'Bob',
-    age: 30,
-    city: 'San Francisco'
+    _id: ObjectId('66d351b260b523f3622710c2'),
+    name: 'Charlie',
+    age: 35,
+    city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c3'),
+    name: 'Alice',
+    age: 29,
+    city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c4'),
+    name: 'Violet',
+    age: 20,
+    city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c5'),
+    name: 'Cora',
+    age: 31,
+    city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c6'),
+    name: 'Oliver',
+    age: 32,
+    city: 'Chicago'
   }
 ]
 
