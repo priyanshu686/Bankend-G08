@@ -69,5 +69,29 @@ Chitkara> db.User.find({})
     name: 'Charlie',
     age: 35,
     city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c3'),
+    name: 'Alice',
+    age: 29,
+    city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c4'),
+    name: 'Violet',
+    age: 20,
+    city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c5'),
+    name: 'Cora',
+    age: 31,
+    city: 'Chicago'
+  },
+  {
+    _id: ObjectId('66d3553b60b523f3622710c6'),
+    name: 'Oliver',
+    age: 32,
+    city: 'Chicago'
   }
 ]
