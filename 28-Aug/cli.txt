@@ -46,3 +46,28 @@ Chitkara> db.User.insertMany([
   }
 }
 
+
+// To Find the data present in the collection
+Chitkara> db.User.find({})
+// Output
+[
+  { _id: ObjectId('66d350b960b523f3622710bc'), name: 'Ram', Age: 21 },
+  {
+    _id: ObjectId('66d351b260b523f3622710c0'),
+    name: 'Alice',
+    age: 25,
+    city: 'New York'
+  },
+  {
+    _id: ObjectId('66d351b260b523f3622710c1'),
+    name: 'Bob',
+    age: 30,
+    city: 'San Francisco'
+  },
+  {
+    _id: ObjectId('66d351b260b523f3622710c2'),
+    name: 'Charlie',
+    age: 35,
+    city: 'Chicago'
+  }
+]
