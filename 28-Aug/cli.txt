@@ -31,7 +31,7 @@ Chitkara> db.User.insertOne({name:"Ram" ,Age: 21})
 
 
 // To insert More than one data in collection
-University> db.User.insertMany([
+Chitkara> db.User.insertMany([
 ... { name: "Alice", age: 25, city: "New York" },
 ...     { name: "Bob", age: 30, city: "San Francisco" },
 ...     { name: "Charlie", age: 35, city: "Chicago" }
