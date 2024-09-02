@@ -1,0 +1,34 @@
+ 
+ 
+ # Task 1:  
+ // Find students who dont have age =22 or marks ==90 .
+ db.Student.find({
+... $nor: [
+...       { age: 22 },
+...       { marks: 90 }
+...     ]
+...   })
+// Output
+[
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c2'),
+    name: 'Grace',
+    age: 23,
+    subject: 'Physics',
+    marks: 89
+  },
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c3'),
+    name: 'Hannah',
+    age: 20,
+    subject: 'Chemistry',
+    marks: 85
+  },
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c5'),
+    name: 'Jack',
+    age: 24,
+    subject: 'Computer Science',
+    marks: 87
+  }
+]
