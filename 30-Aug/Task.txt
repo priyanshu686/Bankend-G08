@@ -72,7 +72,7 @@ Chitkara> db.Student.find({
 ]
 
 
-# Task 3: Update the Age from 22 to 54
+# Task 3: Update the One Age from 22 to 54
 
 Chitkara> db.Student.updateOne(
 ... { age:  22  }, // Filter condition
@@ -87,7 +87,7 @@ Chitkara> db.Student.updateOne(
   upsertedCount: 0
 }
 
-#Task 4:
+#Task 4:  If age is less then and equal to 24 add the Category as youth
 
 Chitkara> db.Student.updateMany(
 ... { "age": { $lte: 24 } },
@@ -101,3 +101,15 @@ Chitkara> db.Student.updateMany(
   modifiedCount: 4,
   upsertedCount: 0
 }
+
+# Task 5: Delete the one data member whose name is Alice
+
+Chitkara> db.Student.deleteOne( { "name": "Alice" })
+//Output
+{ acknowledged: true, deletedCount: 0 }
+
+# Task 6:  Find the Ram info and Delete its data
+
+University> db.User.findOneAndDelete({ "name": "Ram" });
+//Output
+{ _id: ObjectId('66d350b960b523f3622710bc'), name: 'Ram', Age: 21 }
