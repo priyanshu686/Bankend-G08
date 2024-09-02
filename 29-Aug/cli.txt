@@ -61,4 +61,66 @@ Chitkara> db.User.find({
   }
 ]
 
-# Task:
+# Task 1: 
+// Find Student with age equal 22 & Marks equal to 91
+ db.Student.find({$and:[
+... {age: 22},
+... {marks: 91}]
+... })
+// Output
+[
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c4'),
+    name: 'Ivy',
+    age: 22,
+    subject: 'Biology',
+    marks: 91
+  }
+]
+
+#Task 2:  
+// Find the students where marks are more than or equal 80 and age more than or equal to 18
+Chitkara> db.Student.find({
+... marks: { $gte: 80 },
+... age: { $gte: 18 }
+...   })
+
+//Output
+[
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c1'),
+    name: 'Frank',
+    age: 21,
+    subject: 'Mathematics',
+    marks: 90
+  },
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c2'),
+    name: 'Grace',
+    age: 23,
+    subject: 'Physics',
+    marks: 89
+  },
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c3'),
+    name: 'Hannah',
+    age: 20,
+    subject: 'Chemistry',
+    marks: 85
+  },
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c4'),
+    name: 'Ivy',
+    age: 22,
+    subject: 'Biology',
+    marks: 91
+  },
+  {
+    _id: ObjectId('66ceeef64fc32ed2362710c5'),
+    name: 'Jack',
+    age: 24,
+    subject: 'Computer Science',
+    marks: 87
+  }
+]
+
