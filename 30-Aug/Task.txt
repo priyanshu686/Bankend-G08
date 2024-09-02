@@ -70,3 +70,34 @@ Chitkara> db.Student.find({
     marks: 87
   }
 ]
+
+
+# Task 3: Update the Age from 22 to 54
+
+Chitkara> db.Student.updateOne(
+... { age:  22  }, // Filter condition
+...   { $set: { age: 54 } }  // Update operation
+... )
+//Output
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+#Task 4:
+
+Chitkara> db.Student.updateMany(
+... { "age": { $lte: 24 } },
+...  { $set: { "category": "youth" } }
+...    );
+// Output
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 4,
+  modifiedCount: 4,
+  upsertedCount: 0
+}
