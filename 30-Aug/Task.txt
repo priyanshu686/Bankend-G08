@@ -32,6 +32,8 @@
     marks: 87
   }
 ]
+
+
 # Task 2: 
 // Find students who dont have age =22 
 Chitkara> db.Student.find({
